@@ -271,7 +271,7 @@ To run the test script, we need a testng xml file. Create an xml file in the roo
 	</test>
 </suite>
 ```
-At this point, browser will be launched and test will be executed. Reports will be generated inside test-output folder.
+At this point, chrome browser will be launched and test will be executed. Reports will be generated inside test-output folder. Currently supported browsers are `firefox`, `chrome` and `ie`.
 
 # Additional Information
 
