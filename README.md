@@ -316,3 +316,7 @@ driver = new WebDriverFactory().createDriver(remoteHubUrl, caps);
 ## Supported element actions
 
 To check the supported element actions/supported selenium commands see [BasePage.java](src/main/java/com/pswain/oldmonk/core/BasePage.java) 
+
+## Failure screenshot
+
+In case of test failure, the framework will generate the failure screenshot and will copy the file to target folder
