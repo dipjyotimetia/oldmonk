@@ -320,3 +320,19 @@ To check the supported element actions/supported selenium commands see [BasePage
 ## Failure screenshot
 
 In case of test failure, the framework will generate the failure screenshot and will copy the file to target folder
+
+## Logging
+
+To capture logs, initialize the logger in `@BeforeClass` like this:
+
+```
+LoggerUtils.startTestLogging(this.getClass().getSimpleName());
+```
+
+This will create a new file in logs folder with the name of test class being executed, and will capture all logs in that file. Ideally it's a good idea to capture the test script logs in separate log files, instead of putting all logs inside a huge log file. It helps in debugging issues faster.
+
+To stop logging, in `@AfterClass` add a line like this:
+
+```
+LoggerUtils.stopTestLogging();
+```
